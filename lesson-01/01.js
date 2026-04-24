@@ -3,9 +3,11 @@
 
 // your code
 let sum = 0;
+let i = 0;
 
-while (sum < 20) {
-    sum += 1;
+while (i < 20) {
+    i += 1;
+    sum += i;
     console.log(sum);
 }
 
