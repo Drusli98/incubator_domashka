@@ -9,4 +9,3 @@ while (sum < 20) {
     console.log(sum);
 }
 
-console.log(sum);
