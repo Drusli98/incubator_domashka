@@ -5,7 +5,7 @@
 */
 
 // your code
-let sum = 1;
+let sum = 0;
 let division = 1;
 
 while (division < 20) {
