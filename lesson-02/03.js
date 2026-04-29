@@ -4,33 +4,35 @@
  * Результат сохраните в переменной grade.
  */
 
-let score; // тестовое значение, можно изменять
+let score = 70 ; // тестовое значение, можно изменять
 let grade;
 let valueisActive = false;
 
-while (!valueisActive) {
-    score = Math.floor(Math.random() * 101);
-    if (score >= 0 && score <= 100) {
-        if (score >= 0 && score <= 49) {
-            grade = 'F';
-            valueisActive = true;
-        } else if (score >= 50 && score <= 69) {
-            grade = 'D';
-            valueisActive = true;
-        } else if (score >= 70 && score <= 79) {
-            grade = 'C';
-            valueisActive = true;
-        } else if (score >= 80 && score <= 89) {
-            grade = 'B';
-            valueisActive = true;
-        } else {
-            grade = 'A';
-            valueisActive = true;
-        }
+
+// score = Math.floor(Math.random() * 101);
+if (score >= 0 && score <= 100) {
+    if (score <= 49) {
+        grade = 'F';
+        valueisActive = true;
+    } else if (score <= 69) {
+        grade = 'D';
+        valueisActive = true;
+    } else if (score <= 79) {
+        grade = 'C';
+        valueisActive = true;
+    } else if (score <= 89) {
+        grade = 'B';
+        valueisActive = true;
     } else {
-        alert('Введите корректный балл от 0 до 100')
+        grade = 'A';
+        valueisActive = true;
     }
+} else {
+    alert('Введите корректный балл от 0 до 100')
 }
 
+console.log(score);
 console.log(grade)
+
+
 // your code
