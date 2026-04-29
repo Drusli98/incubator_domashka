@@ -10,7 +10,6 @@ let valueisActive = false;
 
 
 // score = Math.floor(Math.random() * 101);
-if (score >= 0 && score <= 100) {
     if (score <= 49) {
         grade = 'F';
         valueisActive = true;
@@ -27,12 +26,9 @@ if (score >= 0 && score <= 100) {
         grade = 'A';
         valueisActive = true;
     }
-} else {
-    alert('Введите корректный балл от 0 до 100')
-}
 
 console.log(score);
-console.log(grade)
+console.log(grade);
 
 
 // your code
