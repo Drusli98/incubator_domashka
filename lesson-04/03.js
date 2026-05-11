@@ -26,7 +26,7 @@ findCommonElements([1, 2, 3], [2, 3, 4]) // [2, 3]
 // }
 
 const array1 = [1, 2, 3];
-const array2 = [2, 3, 4];
+const array2 = [5, 6, 7];
 
 function includesElement(arr, el) {
     for (let i = 0; i < arr.length; i++) {
@@ -37,13 +37,25 @@ function includesElement(arr, el) {
     return false
 }
 
+// function findCommonElements(arr1, arr2) {
+//     const newArray = [];
+//     for (let i = 0; i < arr1.length; i++) {
+//         for (let j = 0; j < arr2.length; j++) {
+//             if (arr1[i] === arr2[j]) {
+//                 newArray.push(arr1[i]);
+//             }
+//         }
+//     }
+//     return newArray
+// }
+//
+// console.log(findCommonElements(array1, array2))
+
 function findCommonElements(arr1, arr2) {
     const newArray = [];
     for (let i = 0; i < arr1.length; i++) {
-        for (let j = 0; j < arr2.length; j++) {
-            if (arr1[i] === arr2[j]) {
-                newArray.push(arr1[i]);
-            }
+        if(includesElement(arr2, arr1[i])){
+            newArray.push(arr1[i]);
         }
     }
     return newArray
