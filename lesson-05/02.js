@@ -33,6 +33,7 @@ const gallery = {
     'Mona Lisa': 'Leonardo da Vinci',
     'Starry Night': 'Vincent van Gogh',
     'The Scream': 'Edvard Munch',
+    image: 0,
 }
 
 function updateGallery(obj,key,newValue) {
@@ -43,4 +44,7 @@ updateGallery(gallery,'The Scream','Salvador Dali');
 updateGallery(gallery,'The Persistence of Memory','Salvador Dali');
 console.log(gallery);
 
-console.log();
+const image = 'image';
+const book = 'The Persistence of Memory';
+console.log(gallery[image]);
+console.log(gallery[book]);
