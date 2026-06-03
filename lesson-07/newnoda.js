@@ -34,7 +34,7 @@ const serv = http.createServer((req,res) => {
         res.end(JSON.stringify(stats));
     } else if (req.url.startsWith('/users/') && req.method === 'GET') {
         const id = req.url.split('/')[2];
-        const user = users.find (u => u.id === parseInt(id));
+        const user = users.find (u => {return u.id === parseInt(id)});
         if (user) {
             res.writeHead(200, {'Content-Type': 'application/json'});
             res.end(JSON.stringify(user));
